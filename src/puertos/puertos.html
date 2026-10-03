@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>SUMMIT</title>
+    <!-- Permite que el diseño use el ancho real de la pantalla del móvil. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/logo/summit_logo_filled.png">
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="stylesPuertos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="titulo_header">
+            <h1>SUMMIT</h1>
+        </div>
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <div class="logo">
+                <img class="logo_sidebar" src="../../images/logo/summit_logo3.png" alt="logo ubicado en el sidebar">
+            </div>
+            <nav class="links" aria-label="Navegación principal">
+                <ul>
+                    <a href="../inicio/indexInicio.html" target="_self">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Inicio</span>
+                    </a>
+                    <a class="is-active" href="../puertos/puertos.html" target="_self">
+                        <i class="fa-solid fa-mountain"></i>
+                        <span>Puertos</span>
+                    </a>
+
+                    <a href="../retos/retos.html">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                        <span>Retos</span>
+                    </a>
+
+                    <a href="../comunidad/comunidad.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Comunidad</span>
+                    </a>
+
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="main-content">
+            <div class="puertos-intro">
+                <p class="puertos-kicker">EUSKAL HERRIA · COLECCIÓN</p>
+                <h1>Puertos de montaña</h1>
+                <p>Explora cada ascensión y descubre la información de sus vertientes.</p>
+            </div>
+
+            <div class="puertos-grid" id="puertosContainer" aria-live="polite">
+                <article class="puerto-item" data-nivel="1">
+                    <div class="puerto-item-image"><img src="../../images/chapas/monte-oiz.png"
+                            alt="Chapa de Monte Oiz (desde Iurreta)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 1</span>
+                        <h2>Monte Oiz (desde Iurreta)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>14.9 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>891 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="1">
+                    <div class="puerto-item-image"><img src="../../images/chapas/urkiola.png"
+                            alt="Chapa de Urkiola (desde Mañaria)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 1</span>
+                        <h2>Urkiola (desde Mañaria)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>6.1 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>554 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="1">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Arrate (por Azitain)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 1</span>
+                        <h2>Arrate (por Azitain)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>5.0 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>435 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="1">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Erlaitz (desde Irún)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 1</span>
+                        <h2>Erlaitz (desde Irún)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>3.9 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>412 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="1">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Pike Bidea / Alto de Pike"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 1</span>
+                        <h2>Pike Bidea / Alto de Pike</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>2.1 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>227 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="1">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Sollube (desde Bermeo)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 1</span>
+                        <h2>Sollube (desde Bermeo)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>7.7 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>682 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="1">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Pagomakurre (desde Areatza)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 1</span>
+                        <h2>Pagomakurre (desde Areatza)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>8.9 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>739 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="2">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Jaizkibel (desde Lezo)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 2</span>
+                        <h2>Jaizkibel (desde Lezo)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>8.1 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>447 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="2">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Jaizkibel (desde Hondarribia)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 2</span>
+                        <h2>Jaizkibel (desde Hondarribia)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>9.1 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>384 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="2">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de El Vivero (desde Galdakao)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 2</span>
+                        <h2>El Vivero (desde Galdakao)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>5.4 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>421 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="2">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Orduña (desde Orduña)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 2</span>
+                        <h2>Orduña (desde Orduña)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>7.8 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>610 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="2">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Puerto de Herrera (desde Peciña)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 2</span>
+                        <h2>Puerto de Herrera (desde Peciña)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>5.6 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>472 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="2">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Azurki (desde Zestoa)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 2</span>
+                        <h2>Azurki (desde Zestoa)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>14.4 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>816 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="2">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Karakate (desde Soraluze)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 2</span>
+                        <h2>Karakate (desde Soraluze)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>8.0 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>612 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="3">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Aitzorrotz (desde Ormaiztegi)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 3</span>
+                        <h2>Aitzorrotz (desde Ormaiztegi)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>6.3 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>310 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="3">
+                    <div class="puerto-item-image"><img src="../../images/chapas/zaldiaran.png"
+                            alt="Chapa de Zaldiaran (desde Vitoria)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 3</span>
+                        <h2>Zaldiaran (desde Vitoria)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>4.4 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>218 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="3">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Dima (desde Igorre)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 3</span>
+                        <h2>Dima (desde Igorre)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>7.2 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>340 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="3">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Bikotx-Gane (desde Areatza)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 3</span>
+                        <h2>Bikotx-Gane (desde Areatza)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>4.8 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>385 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="3">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Otzaurte (desde Zegama)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 3</span>
+                        <h2>Otzaurte (desde Zegama)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>3.7 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>288 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="3">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Mandubia (desde Beasain)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 3</span>
+                        <h2>Mandubia (desde Beasain)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>6.8 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>352 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="3">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Azazeta (desde Maeztu)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 3</span>
+                        <h2>Azazeta (desde Maeztu)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>6.2 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>235 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="4">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Puerto de Vitoria (desde Berrosteguieta)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 4</span>
+                        <h2>Puerto de Vitoria (desde Berrosteguieta)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>4.1 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>164 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="4">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Monte Igueldo (desde San Sebastián)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 4</span>
+                        <h2>Monte Igueldo (desde San Sebastián)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>1.7 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>106 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="4">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Alto de Andollu (desde Vitoria-Gasteiz)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 4</span>
+                        <h2>Alto de Andollu (desde Vitoria-Gasteiz)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>2.5 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>85 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="4">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Unbe (desde Elorrieta / Bilbao)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 4</span>
+                        <h2>Unbe (desde Elorrieta / Bilbao)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>4.5 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>210 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+                <article class="puerto-item" data-nivel="4">
+                    <div class="puerto-item-image"><img src="../../images/chapas/puerto-bloqueado.png"
+                            alt="Chapa de Gartxeta (desde Markina)"></div>
+                    <div class="puerto-item-content"><span class="puerto-item-level">Nivel 4</span>
+                        <h2>Gartxeta (desde Markina)</h2>
+                        <dl class="puerto-item-details">
+                            <div>
+                                <dt>Distancia</dt>
+                                <dd>3.2 km</dd>
+                            </div>
+                            <div>
+                                <dt>Desnivel</dt>
+                                <dd>145 m</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <h1>SUMMIT</h1>
+        <p>RIDE · COLLECT · EXPLORE</p>
+
+        <div class="social-links">
+
+            <a href="https://www.strava.com" aria-label="strava">
+                <i class="fa-brands fa-strava"></i>
+            </a>
+
+            <a href="https://www.youtube.com" aria-label="youtube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://github.com/maialenBarredo" aria-label="github" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="../app.js"></script>
+</body>
+
+</html>

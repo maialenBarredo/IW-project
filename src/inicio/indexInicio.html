@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>SUMMIT</title>
+    <!-- Permite que el diseño use el ancho real de la pantalla del móvil. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/logo/summit_logo_filled.png">
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="stylesInicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="titulo_header">
+            <h1>SUMMIT</h1>
+        </div>
+
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <div class="logo">
+                <img class="logo_sidebar" src="../../images/logo/summit_logo3.png" alt="logo ubicado en el sidebar">
+            </div>
+            <nav class="links" aria-label="Navegación principal">
+                <ul>
+                    <a class="is-active" href="#" aria-current="page">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Inicio</span>
+                    </a>
+                    <a href="../puertos/puertos.html" target="_self">
+                        <i class="fa-solid fa-mountain"></i>
+                        <span>Puertos</span>
+                    </a>
+
+                    <a href="../retos/retos.html">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                        <span>Retos</span>
+                    </a>
+
+                    <a href="../comunidad/comunidad.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Comunidad</span>
+                    </a>
+
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="main-content">
+            <div class="banner">
+                <p class="banner-kicker">Euskal Herria · Expansión 01</p>
+                <h1>Cada puerto,<br>una historia</h1>
+                <p class="banner-copy">Sube. Tus rutas de carretera y gravel se convierten en una
+                    colección. Conecta Strava y deja que el GPS haga el resto.</p>
+                <a class="banner-button" href="../puertos/puertos.html" target="_self">Explorar los puertos de EH <i
+                        class="fa-solid fa-bicycle"></i></a>
+            </div>
+
+            <div class="recuadros" id="stats">
+                <div class="stat-tile">
+                    <i class="fa-solid fa-mountain-sun"></i>
+                    <span class="stat-valor">104</span>
+                    <span class="stat-label">puertos subidos</span>
+                </div>
+
+                <div class="stat-tile">
+                    <i class="fa-solid fa-road-circle-check"></i>
+                    <span class="stat-valor">750<small>km</small></span>
+                    <span class="stat-label">km recorridos</span>
+                </div>
+
+                <div class="stat-tile">
+                    <i class="fa-solid fa-award"></i>
+                    <span class="stat-valor">32</span>
+                    <span class="stat-label">medallas reunidas</span>
+                </div>
+
+                <div class="stat-tile">
+                    <i class="fa-solid fa-mountain"></i>
+                    <span class="stat-valor">8.450<small>m</small></span>
+                    <span class="stat-label">desnivel acumulado</span>
+                </div>
+            </div>
+
+            <div class="miColeccion">
+                <div class="misParches">
+                    <h2>Mis Parches</h2>
+                    <div class="filtroNiveles">
+                        <a id="todos" class="levelAll-button" href="#todos">Todos</a>
+                        <a id="nivel1" class="levelOne-button" href="#nivel1">Nivel 1</a>
+                        <a id="nivel2" class="levelTwo-button" href="#nivel2">Nivel 2</a>
+                        <a id="nivel3" class="levelThree-button" href="#nivel3">Nivel 3</a>
+                        <a id="nivel4" class="levelFour-button" href="#nivel4">Nivel 4</a>
+                    </div>
+                    <div class="parches" aria-live="polite">
+                        <article class="puerto" data-nivel="1">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <input class="completarEstado" type="checkbox" id="monteOizCompletado">
+                                    <div class="puertoLogoWrap">
+                                        <img src="../../images/chapas/puerto-bloqueado.png" alt="Monte Oiz bloqueado"
+                                            class="chapa chapaBloqueada">
+                                        <img src="../../images/chapas/monte-oiz.png" alt="Monte Oiz (desde Iurreta)"
+                                            class="chapa chapaConseguida">
+                                    </div>
+                                    <div class="puertoInfo">
+                                        <h3>Monte Oiz (desde Iurreta)</h3>
+                                        <div class="parcheActions">
+                                            <a class="parcheButton infoButton" href="../puertos/puertos.html">Más
+                                                información</a>
+                                            <label class="parcheButton completeButton"
+                                                for="monteOizCompletado">Completar</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="1">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <input class="completarEstado" type="checkbox" id="UrkiolaCompletado">
+
+                                    <div class="puertoLogoWrap">
+                                        <img class="chapa chapaBloqueada" src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Puerto bloqueado">
+                                        <img class="chapa chapaConseguida" src="../../images/chapas/urkiola.png"
+                                            alt="Puerto conseguido">
+                                    </div>
+
+                                    <div class="puertoInfo">
+                                        <h3>Urkiola (desde Mañaria)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a>
+                                            <label class="parcheButton completeButton" for="UrkiolaCompletado">
+                                                Completar
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="1">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <input class="completarEstado" type="checkbox" id="ArrateCompletado">
+                                    <div class="puertoLogoWrap">
+                                        <img class="chapa chapaBloqueada" src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Puerto bloqueado">
+                                        <img class="chapa chapaConseguida" src="../../images/chapas/arrate.png"
+                                            alt="Puerto conseguido">
+                                    </div>
+
+                                    <div class="puertoInfo">
+                                        <h3>Arrate (por Azitain)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a>
+                                            <label class="parcheButton completeButton"
+                                                for="ArrateCompletado">Completar</label>
+                                        </div>
+                                    </div>
+                                </div>
+                        </article>
+                        <article class="puerto" data-nivel="1">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Erlaitz (desde Irún)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Erlaitz (desde Irún)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="1">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Pike Bidea / Alto de Pike" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Pike Bidea / Alto de Pike</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="1">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Sollube (desde Bermeo)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Sollube (desde Bermeo)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="1">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Pagomakurre (desde Areatza)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Pagomakurre (desde Areatza)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="2">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Jaizkibel (desde Lezo)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Jaizkibel (desde Lezo)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="2">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Jaizkibel (desde Hondarribia)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Jaizkibel (desde Hondarribia)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="2">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/vivero.png"
+                                            alt="El Vivero (desde Galdakao)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>El Vivero (desde Galdakao)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="2">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Orduña (desde Orduña)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Orduña (desde Orduña)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="2">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Puerto de Herrera (desde Peciña)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Puerto de Herrera (desde Peciña)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="2">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Azurki (desde Zestoa)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Azurki (desde Zestoa)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="2">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Karakate (desde Soraluze)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Karakate (desde Soraluze)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="3">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Aitzorrotz (desde Ormaiztegi)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Aitzorrotz (desde Ormaiztegi)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="3">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/zaldiaran.png"
+                                            alt="Zaldiaran (desde Vitoria)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Zaldiaran (desde Vitoria)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="3">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Dima (desde Igorre)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Dima (desde Igorre)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="3">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Bikotx-Gane (desde Areatza)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Bikotx-Gane (desde Areatza)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="3">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Otzaurte (desde Zegama)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Otzaurte (desde Zegama)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="3">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Mandubia (desde Beasain)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Mandubia (desde Beasain)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="3">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Azazeta (desde Maeztu)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Azazeta (desde Maeztu)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="4">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Puerto de Vitoria (desde Berrosteguieta)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Puerto de Vitoria (desde Berrosteguieta)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="4">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Monte Igueldo (desde San Sebastián)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Monte Igueldo (desde San Sebastián)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="4">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Alto de Andollu (desde Vitoria-Gasteiz)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Alto de Andollu (desde Vitoria-Gasteiz)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="4">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Unbe (desde Elorrieta / Bilbao)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Unbe (desde Elorrieta / Bilbao)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="puerto" data-nivel="4">
+                            <div class="puertoCard">
+                                <div class="puertoCara puertoFrontal">
+                                    <div class="puertoLogoWrap"><img src="../../images/chapas/puerto-bloqueado.png"
+                                            alt="Gartxeta (desde Markina)" class="chapa"></div>
+                                    <div class="puertoInfo">
+                                        <h3>Gartxeta (desde Markina)</h3>
+                                        <div class="parcheActions"><a class="parcheButton infoButton"
+                                                href="../puertos/puertos.html">Más información</a><a
+                                                class="parcheButton completeButton" href="#">Completar</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <h1>SUMMIT</h1>
+        <p>RIDE · COLLECT · EXPLORE</p>
+
+        <div class="social-links">
+
+            <a href="https://www.strava.com" aria-label="strava" target="blank">
+                <i class="fa-brands fa-strava"></i>
+            </a>
+
+            <a href="https://www.youtube.com" aria-label="youtube" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://github.com/maialenBarredo" aria-label="github" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="../app.js"></script>
+</body>
+
+</html>
